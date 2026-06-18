@@ -31,5 +31,7 @@ with profile(
         torch.profiler.ProfilerActivity.CUDA
     ]
 ) as prof:
-
-    train_step()
+        train_step()
+prof.export_chrome_trace(
+    "traces/trace.json"
+)
