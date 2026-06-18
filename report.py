@@ -1,4 +1,4 @@
-
+os.makedirs("reports", exist_ok=True)
 import csv
 import os
 
